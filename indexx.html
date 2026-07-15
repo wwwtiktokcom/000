@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>System Error</title>
+    <style>
+        body { 
+            background-color: #00008b; 
+            color: white; 
+            text-align: center; 
+            font-family: 'Courier New', Courier, monospace; 
+            padding-top: 15%; 
+        }
+        h1 { font-size: 60px; border: 2px solid white; display: inline-block; padding: 20px; }
+        p { font-size: 24px; }
+    </style>
+</head>
+<body>
+    <script>
+        alert("تحذير: تم اكتشاف محاولة اختراق للنظام!");
+        alert("جاري سحب كافة الملفات والبيانات الشخصية...");
+        alert("فشل في تأمين الاتصال! تم السيطرة على الجهاز.");
+        
+        document.body.innerHTML = `
+            <h1>CRITICAL SYSTEM FAILURE</h1>
+            <p>تم اختراق النظام بالكامل</p>
+            <p>يتم الآن مسح جميع البيانات من القرص الصلب...</p>
+        `;
+    </script>
+</body>
+</html>
